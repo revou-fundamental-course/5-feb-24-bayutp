@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Revou Mini Project</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <h1>Hello world!</h1>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <p>
+          Masukkan suhu derajat Celcius (<sup>o</sup>C) ke kotak dibawah, lalu
+          klik tombol konversi dalam bentuk Fahrenheit (<sup>o</sup>F).
+        </p>
+        <form action="" method="post">
+          <label for="celcius">Celcius (<sup>o</sup>C)</label>
+          <textarea name="celcius" id="celcius" cols="50" rows="5"></textarea>
+
+          <button type="button" class="convert">Konversi</button>
+          <button type="reset" class="reset">Reset</button>
+          <button type="button" class="reverse">Reverse</button>
+
+          <label for="celcius">Fahrenheit (<sup>o</sup>F)</label>
+          <textarea
+            name="fahrenheit"
+            id="fahrenheit"
+            cols="50"
+            rows="5"
+          ></textarea>
+
+          <label for="result">Cara Kalkulasi</label>
+          <textarea name="result" id="result" cols="50" rows="5"></textarea>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
