@@ -20,12 +20,19 @@
           Masukkan suhu derajat Celcius (<sup>o</sup>C) ke kotak dibawah, lalu
           klik tombol konversi dalam bentuk Fahrenheit (<sup>o</sup>F).
         </p>
-        <form action="" method="post">
+        <form>
           <label for="celcius">Celcius (<sup>o</sup>C)</label>
-          <textarea name="celcius" id="celcius" cols="50" rows="5"></textarea>
+          <textarea
+            name="celcius"
+            id="celcius"
+            cols="50"
+            rows="5"
+          ></textarea>
 
           <div class="operations">
-            <button type="button" class="convert">Konversi</button>
+            <button type="button" class="convert" onclick="calculate()">
+              Konversi
+            </button>
             <button type="reset" class="reset">Reset</button>
             <button type="button" class="reverse">Reverse</button>
           </div>
