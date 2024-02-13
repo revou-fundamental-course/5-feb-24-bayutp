@@ -40,22 +40,21 @@ function isCelcius(status) {
 }
 
 function validate(data){
+    let field = document.getElementById("celcius");
+    let msg = document.getElementById("err_msg");
     if (data == ""){
-        alert("Form tidak boleh kosong!")
-        clear()
+        field.classList.add("error")
+        msg.innerText = "Form ini tidak boleh kosong!"
+        msg.classList.add("msg_show")
         return false;
     } else if (isNaN(data)){
-        alert("Form ini harus berupa angka!")
-        clear()
+        field.classList.add("error")
+        msg.classList.add("msg_show")
+        msg.innerText = "Form ini harus berupa angka!"
         return false
     } else {
+        field.classList.remove("error")
+        msg.classList.remove("msg_show")
         return true
     }
-}
-
-function clear() {
-    document.getElementById("celcius").value = ""
-    document.getElementById("fahrenheit").value = ""
-    document.getElementById("result").value = ""
-    document.getElementById("celcius").focus()
 }

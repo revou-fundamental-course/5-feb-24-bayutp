@@ -68,3 +68,21 @@ main form .operations button {
   border-radius: 10px;
   margin-top: 20px;
 }
+
+#err_msg {
+  font-size: 12px;
+  color: #f44336;
+  margin: 0px;
+  margin-bottom: 5px;
+  margin-top: 4px;
+  display: none;
+}
+
+.error {
+  margin-bottom: 0px;
+  border: 2px solid red;
+}
+
+.msg_show {
+  display: inline-block !important;
+}
