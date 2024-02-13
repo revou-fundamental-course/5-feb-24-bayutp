@@ -29,6 +29,7 @@ function isCelcius(status) {
         document.getElementById("guide-rumus").innerHTML = "Suhu S dalam derajat Celcius (<sup>o</sup>C) sama dengan S dalam derajat Fahrenheit (<sup>o</sup>F) kurang 32 kali 5/9"
         document.getElementById("guide-rumus1").innerHTML = "S<sub>(<sup>o</sup>C)</sub> = (S<sub>(<sup>o</sup>F)</sub> - 32) x 5/9"
         document.getElementById("guide-rumus2").innerHTML = "S<sub>(<sup>o</sup>C)</sub> = (S<sub>(<sup>o</sup>F)</sub> - 32) x 0.55"
+        document.getElementById("title").innerHTML = "Masukkan suhu derajat Fahrenheit (<sup>o</sup>F) ke kotak dibawah, lalu klik tombol konversi dalam bentuk Celcius (<sup>o</sup>C)."
     } else {
         document.getElementById("labelC").innerHTML = "Celcius (<sup>o</sup>C)"
         document.getElementById("labelF").innerHTML = "Fahrenheit (<sup>o</sup>F)"
@@ -37,6 +38,7 @@ function isCelcius(status) {
         document.getElementById("guide-rumus").innerHTML = "Suhu S dalam derajat Fahrenheit (<sup>o</sup>F) sama dengan S dalam derajat Celcius (<sup>o</sup>C) kali 9/5 tambah 32"
         document.getElementById("guide-rumus1").innerHTML = "S<sub>(<sup>o</sup>F)</sub> = (S<sub>(<sup>o</sup>C)</sub> x 9/5) + 32"
         document.getElementById("guide-rumus2").innerHTML = "S<sub>(<sup>o</sup>F)</sub> = (S<sub>(<sup>o</sup>C)</sub> x 1.8) + 32"
+        document.getElementById("title").innerHTML = "Masukkan suhu derajat Celcius (<sup>o</sup>C) ke kotak dibawah, lalu klik tombol konversi dalam bentuk Fahrenheit (<sup>o</sup>F)."
     }
 }
 
