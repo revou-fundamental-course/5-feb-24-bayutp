@@ -17,6 +17,7 @@ function reserve(){
     if (celcius != "") {
         calculate()
     }
+    removeClass()
 }
 
 function isCelcius(status) {
@@ -57,4 +58,9 @@ function validate(data){
         msg.classList.remove("msg_show")
         return true
     }
+}
+
+function removeClass() {
+    document.getElementById("celcius").classList.remove("error")
+    document.getElementById("err_msg").classList.remove("msg_show")
 }
