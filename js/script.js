@@ -43,21 +43,14 @@ function isCelcius(status) {
 }
 
 function validate(data){
-    let field = document.getElementById("celcius");
-    let msg = document.getElementById("err_msg");
     if (data == ""){
-        field.classList.add("error")
-        msg.innerText = "Form ini tidak boleh kosong!"
-        msg.classList.add("msg_show")
+        addClass("Form ini tidak boleh kosong!")
         return false;
     } else if (isNaN(data)){
-        field.classList.add("error")
-        msg.classList.add("msg_show")
-        msg.innerText = "Form ini harus berupa angka!"
+        addClass("Form ini harus berupa angka!")
         return false
     } else {
-        field.classList.remove("error")
-        msg.classList.remove("msg_show")
+        removeClass()
         return true
     }
 }
@@ -65,4 +58,12 @@ function validate(data){
 function removeClass() {
     document.getElementById("celcius").classList.remove("error")
     document.getElementById("err_msg").classList.remove("msg_show")
+}
+
+function addClass(error_msg) {
+    let field = document.getElementById("celcius");
+    let msg = document.getElementById("err_msg");
+    field.classList.add("error")
+    msg.classList.add("msg_show")
+    msg.innerText = error_msg
 }
