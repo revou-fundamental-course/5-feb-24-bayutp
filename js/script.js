@@ -1,9 +1,9 @@
 function calculate() {
     let celcius = document.getElementById("celcius").value;
     let label = document.getElementById("labelC").innerText
-    let result = label.includes("Celcius") ? (celcius * 1.8) + 32 : (celcius-32) * 5/9
-    result = Number.isInteger(result) ? result : result.toFixed(2)
     if (validate(celcius)) {
+        let result = label.includes("Celcius") ? (celcius * 1.8) + 32 : (celcius-32) * 5/9
+        result = Number.isInteger(result) ? result : result.toFixed(2)
         document.getElementById("fahrenheit").value = result;
         document.getElementById("result").value = label.includes("Celcius") ? `${celcius} C x (9/5) + 32 = ${result} F`: `(${celcius} F - 32) x 5/9 = ${result} C`
     }
